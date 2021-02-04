@@ -1,0 +1,6 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^greenhouse-tp.online [NC]
+
+RewriteRule ^(.*)$ http://greenhouse-tp.online/$1 [L,R=301,NC]
+
